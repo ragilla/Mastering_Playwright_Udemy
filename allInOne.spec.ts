@@ -8,6 +8,7 @@ test.only('', async ({ page }) => {
     await page.locator("//ul[@class='oxd-dropdown-menu']/following::li[4]").click();
     await page.waitForURL('**/dashboard/index');
     await page.close();
+    await page.close();
 });
 test('Static Drop Down', async ({ page }) => {
     await page.goto("https://demo.automationtesting.in/Register.html");
