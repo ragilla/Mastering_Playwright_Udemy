@@ -195,9 +195,9 @@ console.log(j);*/
 var aa = 50;
 var bb = 30;
 
-var aa = aa + bb; // 80
-bb = aa - bb; //50 30 = 20
-aa = aa - bb; //50 30  = 20
+var aa = aa + bb; 
+bb = aa - bb; 
+aa = aa - bb; 
 console.log(aa);
 console.log(bb);
 
