@@ -131,7 +131,7 @@ const res = vots.reduce((acc, vots) => {
     return acc;
 }, {});
 console.log(res); */
-const people = [
+/*const people = [
     { name: 'Alice', age: 15, city: 'NY' },
     { name: 'Bob', age: 17, city: 'LA' },
     { name: 'Charlie', age: 18, city: 'NY' },
@@ -148,7 +148,65 @@ const grouped = people.reduce((acc, person) => {
     acc[key].push(person);
     return acc;
 }, {});
-console.log(grouped);
+console.log(grouped);*/
+/* factorial of the given number
+var num = 5;
+var fact=1;
+for(let i=1 ; i <= num;i++){
+    fact = fact*i;
+ }
+ console.log(fact);*/
+/* reverse a number
+var n = 121;
+var i, j = 0;
+var number = n;
+while (number > 0) {
+    i = number % 10;
+    j = (j * 10) + i;
+    number = Math.floor(number / 10);
+}
+console.log(j);
+if (n === j) {
+    console.log("Polindrome");
+}
+else {
+    console.log("NOT Polindrome");
+}*/
+/*count no.of digits in the given number
+var num = 123455;
+var i = 0;
+while (num > 0) {
+    num = Math.floor(num / 10);
+    i = i + 1;
+}
+console.log(i);*/
+/* sum of the digits
+var number = 12345;
+var i, j = 0;
+var n;
+n = number;
+while (n > 0) {
+    i = n % 10;
+    j = j + i;
+    n = Math.floor(n / 10);
+}
+console.log(j);*/
+// swap without using 3rd variable
+var aa = 50;
+var bb = 30;
+
+var aa = aa + bb; // 80
+bb = aa - bb; //50 30 = 20
+aa = aa - bb; //50 30  = 20
+console.log(aa);
+console.log(bb);
+
+
+
+
+
+
+
 
 
 

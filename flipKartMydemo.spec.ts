@@ -9,6 +9,7 @@ test('FlipKart Demo My Practise', async ({ page }) => {
 
     const [newTab] = await Promise.all([
         page.waitForEvent('popup'),
+        
         page.locator("//div[@class='RG5Slk']").first().click()
     ]);
     // Wait for new tab to load
