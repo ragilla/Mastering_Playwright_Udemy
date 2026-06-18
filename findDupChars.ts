@@ -1,11 +1,13 @@
-const originStr = "aaaabbbccd";
-const map = {};
-for (const char of originStr) {
-    map[char] = (map[char] || 0) + 1;
+const strOriginal = "aaaabbbccd";
+const map: { [key: string]: number } = {};
+
+for (const ch of strOriginal) {
+    map[ch] = (map[ch] || 0) + 1;
 }
-console.log(map)
-for (const key in map) {
-    if (map[key] > 1) {
-        console.log(`${key} : ${map[key]}`)
+
+for (const ch of strOriginal) {
+    if (map[ch] === 1) {
+        console.log("First non-repeating character:", ch);
+        break;
     }
 }
