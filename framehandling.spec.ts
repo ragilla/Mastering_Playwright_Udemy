@@ -21,5 +21,26 @@ test('Frames Handling Using Page.FrameLocator', async ({ page }) => {
     await page.waitForTimeout(2000);
     await page.close();
 });
+test('Handle iframe using frameLocator', async ({ page }) => {
+
+    await page.goto('https://ui.vision/demo/webtest/frames/');
+
+    const frame1 = page.frameLocator('frame[src="frame_1.html"]');
+
+    await frame1.locator('input[name="mytext1"]').fill('Munindhar');
+});
+test.only('Enter text in iframe', async ({ page }) => {
+
+    await page.goto('https://the-internet.herokuapp.com/iframe');
+
+    const editorFrame = page.frameLocator('#mce_0_ifr');
+
+    await editorFrame.locator('#tinymce').clear();
+    await page.pause();
+    await editorFrame.locator('#tinymce').fill('Playwright TypeScript Demo');
+    await page.pause();
+
+
+});
 
 
